@@ -1,1 +1,6 @@
 greenballs
+ansicolor
+extended-choice-parameter
+docker-custom-build-environment
+docker-traceability
+docker-workflow
