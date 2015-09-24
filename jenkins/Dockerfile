@@ -1,5 +1,6 @@
 FROM java:8-jdk
 
+COPY active.txt active.txt
 RUN apt-get update && apt-get install -y wget git curl zip && rm -rf /var/lib/apt/lists/*
 
 ENV JENKINS_HOME /var/jenkins_home
@@ -53,4 +54,4 @@ ENTRYPOINT ["/bin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
 # from a derived Dockerfile, can use `RUN plugin.sh active.txt` to setup /usr/share/jenkins/ref/plugins from a support bundle
 COPY plugins.sh /usr/local/bin/plugins.sh
-RUN ./plugin.sh active.txt
+RUN /usr/local/bin/plugin.sh active.txt
