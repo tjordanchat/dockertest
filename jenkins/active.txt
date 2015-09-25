@@ -4,3 +4,15 @@ extended-choice-parameter
 docker-custom-build-environment
 docker-traceability
 docker-workflow
+git
+github
+sonar
+sonargraph-plugin
+xvfb
+jira
+docker-commons
+docker-build-step
+cloudbees-folder
+build-failure-analyzer
+build-metrics
+build-with-parameters
