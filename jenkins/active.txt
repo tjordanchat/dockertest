@@ -1,12 +1,12 @@
 greenballs
 ansicolor
+git
+git-client
+github
 extended-choice-parameter
 docker-custom-build-environment
 docker-traceability
 docker-workflow
-git-client
-git
-github
 sonar
 sonargraph-plugin
 xvfb
