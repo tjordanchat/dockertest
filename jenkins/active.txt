@@ -4,6 +4,7 @@ extended-choice-parameter
 docker-custom-build-environment
 docker-traceability
 docker-workflow
+git-client
 git
 github
 sonar
