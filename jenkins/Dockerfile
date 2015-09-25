@@ -3,6 +3,7 @@ FROM java:8-jdk
 COPY active.txt /usr/share/jenkins/active.txt
 COPY plugins.sh /usr/local/bin/plugins.sh
 RUN apt-get update && apt-get install -y wget git curl zip docker.io && rm -rf /var/lib/apt/lists/*
+RUN echo "jenkins	ALL=(ALL)	NOPASSWD: ALL" >> /etc/sudoers
 
 ENV JENKINS_HOME /var/jenkins_home
 ENV JENKINS_SLAVE_AGENT_PORT 50000

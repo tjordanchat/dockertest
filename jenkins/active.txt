@@ -18,6 +18,7 @@ build-failure-analyzer
 build-metrics
 build-with-parameters
 credentials
+junit
 cvs
 javadoc
 mailer
